@@ -23,7 +23,7 @@ class UserDetail(generics.RetrieveAPIView):
 class BlogPostList(generics.ListCreateAPIView):
     queryset = BlogPost.objects.all()
     serializer_class = serializers.BlogPostSerializer
-#IsAuthenticatedOrReadOnly permission is for authenticated users who can perform any request, whereas non-authenticated users can perform only read-only requests
+# IsAuthenticatedOrReadOnly permission is for authenticated users who can perform any request, whereas non-authenticated users can perform only read-only requests
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
     def perform_create(self, serializer):
@@ -33,6 +33,6 @@ class BlogPostList(generics.ListCreateAPIView):
 class BlogPostDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = BlogPost.objects.all()
     serializer_class = serializers.BlogPostSerializer
-    #IsAuthenticatedOrReadOnly and IsOwnerOrReadOnly are both required as updating and destroying a post should only be allowed for an authenticated user who is also the owner of the post
+    # IsAuthenticatedOrReadOnly and IsOwnerOrReadOnly are both required as updating and destroying a post should only be allowed for an authenticated user who is also the owner of the post
     permission_classes = [permissions.IsAuthenticatedOrReadOnly,
                             IsOwnerOrReadOnly]
