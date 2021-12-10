@@ -124,6 +124,7 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/images/'
 
+"""pathing for directory and media root for static images that are uploaded via the "image model under BlogPost"""
 STATICFILES_DIRS =  [
     os.path.join(BASE_DIR, 'static')
 ]
