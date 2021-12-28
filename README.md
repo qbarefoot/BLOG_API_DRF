@@ -7,4 +7,4 @@
 
 -> Djoser https://djoser.readthedocs.io/en/latest/getting_started.html
 
-![sample_data_drf](https://user-images.githubusercontent.com/81591201/145861233-fa7cdd38-bc6d-4366-85f7-e520d475d701.jpeg)
+![drf_example](https://user-images.githubusercontent.com/81591201/147519974-4a467f10-8a4d-4537-a40b-f7b239e52895.jpeg)
